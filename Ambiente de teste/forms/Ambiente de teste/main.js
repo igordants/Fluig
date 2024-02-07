@@ -1,3 +1,4 @@
+// Limpar Selecao de tipo de solicitacao
 document.addEventListener('DOMContentLoaded', function() {
         const radios = document.querySelectorAll('input[type="radio"][name="resposta"]');
         const limparSelecaoText = document.getElementById('limparSelecao');
@@ -45,5 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
         camposJuros.style.display = 'none';
     });
 });
+
+
+
 
 
