@@ -1,0 +1,17 @@
+.etiqueta {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.urgente {
+    background-color: #FF5733; 
+}
+
+.nao-urgente {
+    background-color: #3498DB; 
+}
+
+
