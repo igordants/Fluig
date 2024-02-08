@@ -38,46 +38,49 @@
             <div class="form-group">
             
             <h1> Empresa: </h1>
-            <label for="empresas">Escolha uma opção </label>
+            <label for="empresas"></label>
 
                 <select name="empresas" id="empresas">
+			  	  <option disabled selected>Escolha uma opção</option>
                   <option value="ENGPAC">ENGPAC</option>
                   <option value="GENNESIS">GENNESIS</option>
                   <option value="ECONTEX">ECONTEX</option>
                   <option  value="ABRASIL">ABRASIL</option>
                   <option  value="TESLA">TESLA</option>
-                  <option  value="M�TRICA">M�TRICA</option>
+                  <option  value="MÉTRICA">MÉTRICA</option>
                 </select>
                 
             </div>
             
             <div class="form-group">
             	<h1> POLO: </h1>
-            <label for="polos">Escolha uma opção </label>
+            <label for="polos"></label>
 
           <select name="polos" id="polos">
+          	<option disabled selected>Escolha uma opção</option>
             <option value="Macaiba">Macaiba</option>
             <option value="Natal Engpac">Natal Engpac</option>
-            <option value="Mossor�">Mossoró</option>
-            <option  value="Para�ba Engpac">Paraíba Engpac</option>
+            <option value="Mossoró">Mossoró</option>
+            <option  value="Paraíba Engpac">Paraíba Engpac</option>
             <option  value="Areia Branca">Areia Branca</option>
             <option  value="RIO GRANDE DO SUL">RIO GRANDE DO SUL</option>
-            <option  value="BRAS�LIA">BRASÍLIA</option>
-            <option  value="Natal G�NNESIS">Natal Gênnesis</option>
+            <option  value="BRASÍLIA">BRASÍLIA</option>
+            <option  value="Natal GÊNNESIS">Natal Gênnesis</option>
             <option  value="NOVA CRUZ - ENGPAC">NOVA CRUZ - ENGPAC</option>
             <option  value="PAU DOS FERROS">PAU DOS FERROS</option>
             <option  value="NATAL ECONTECX">NATAL ECONTECX</option>
-            <option  value="Para�ba M�trica">Paraíba Métrica</option>
-            <option  value="Para�ba T2">Paraíba T2</option>
+            <option  value="Paraíba Métrica">Paraíba Métrica</option>
+            <option  value="Paraíba T2">Paraíba T2</option>
             <option  value="Goiás"> Goiás </option>
       		<option value="SANTA CRUZ - GÊNNESIS"> SANTA CRUZ - GÊNNESIS </option>
-      		<option value="MOSSOR� - GÊNNESIS"> MOSSORÓ - GÊNNESIS </option>
-      		<option value="PARA�BA - ECONTECX"> PARAÍBA - ECONTECX </option>             
+      		<option value="MOSSORÓ - GÊNNESIS"> MOSSORÓ - GÊNNESIS </option>
+      		<option value="PARAÍBA - ECONTECX"> PARAÍBA - ECONTECX </option>             
           </select>
           
-          <div class= " form-group ">
+          <div class= " form-group centro-de-custo" data-polo="Macaiba" style="display: none">
              	<h1> Centro de custo - Macaíba </h1>
              	<select name = "centroDEcusto" id = "centroDEcusto">
+             	<option disabled selected>Escolha uma opção</option>
              	<option value = "ALMOXARIFADO MACAIBA"> ALMOXARIFADO MACAÍBA </option>
              	<option value = "SME MACAÍBA"> SME MACAÍBA </option>
              	<option value = "SMS MACAÍBA"> SMS MACAÍBA </option>
@@ -87,8 +90,9 @@
              	
             </div>
             
-            <div class= " form-group ">
+            <div class= " form-group centro-de-custo" data-polo ="Natal Engpac" style="display: none">
              	<h1> Centro de custo - NATAL </h1>
+             	<option disabled selected>Escolha uma opção</option>
              	<select name = "centroDEcusto2" id = "centroDEcusto2">
              	<option value = "ALMOXARIFADO NATAL"> ALMOXARIFADO NATAL </option>
              	<option value = "BASE NAVAL"> BASE NAVAL </option>
@@ -98,23 +102,140 @@
              	</select>        
              	
             </div>
+            
+            <div class= " form-group centro-de-custo" data-polo ="Mossoró" style="display: none">
+             	<h1> Centro de custo - MOSSORÓ </h1>
+             	<option disabled selected>Escolha uma opção</option>
+             	<select name = "centroDEcusto3" id = "centroDEcusto3">
+             	<option value = "SME MOSSORO"> SME MOSSORO - MANUTENÇÃO </option>
+             	<option value = "ADM REGIONAL MOSSORO"> ADM REGIONAL MOSSORO </option>
+             	<option value = "GENNESIS"> GENNESIS - FUNDASE - RN </option>
+             
+             	</select>        
+             	
+            </div>
+            
+             <div class= " form-group centro-de-custo" data-polo ="Paraíba Engpac" style="display: none">
+             	<h1> Centro de custo - Paraíba Engpac </h1>
+             	<option disabled selected>Escolha uma opção</option>
+             	<select name = "centroDEcusto4" id = "centroDEcusto4">
+             	<option value = "SME MOSSORO"> SME MOSSORO - MANUTENÇÃO </option>
+             	<option value = "ADM REGIONAL MOSSORO"> ADM REGIONAL MOSSORO </option>
+             	<option value = "GENNESIS"> GENNESIS - FUNDASE - RN </option>
+             
+             	</select>        
+             	
+            </div>
+            
+            <div class= " form-group centro-de-custo" data-polo ="Areia Branca" style="display: none">
+             	<h1> Centro de custo - Areia Branca </h1>
+             	
+             	<select name = "centroDEcusto5" id = "centroDEcusto5">
+             	<option disabled selected>Escolha uma opção</option>
+             	<option value = "CODERN - PORTO ILHA"> CODERN - PORTO ILHA </option>
+             
+             	</select>        
+             	
+            </div>
+            
+            <div class= " form-group centro-de-custo" data-polo ="RIO GRANDE DO SUL" style="display: none">
+             	<h1> Centro de custo - RIO GRANDE DO SUL </h1>
+             	
+             	<select name = "centroDEcusto6" id = "centroDEcusto6">
+             	<option disabled selected>Escolha uma opção</option>
+             	<option value = "Exército - Rio Grande do Sul"> Exército - Rio Grande do Sul </option>
+             	<option value = "Correios 12"> Correios 12 </option>
+             	<option value = "Correios 17"> Correios 17 </option>
+             	<option value = "Contrato 43"> Contrato 43 </option>
+             	<option value = "RS - ADM LOCAL"> RS - ADM LOCA </option>
+             	<option value = "EMBRAPA"> EMBRAPA </option>
+             	<option value = "GRUPO HOSPITAL CONCEICAO"> GRUPO HOSPITAL CONCEICAO </option>
+             	<option value = "CORREIOS - 824"> CORREIOS - 824 </option>
+             	<option value = "TRE - RS"> TRE - RS </option>
+             	<option value = "BANRISUL - LOTE 1"> BANRISUL - LOTE 1 </option>
+             	<option value = "BANRISUL - LOTE 2"> BANRISUL - LOTE 2 </option>
+             	<option value = "SERPRO - RS"> SERPRO - RS </option>
+             	<option value = "CORSAN - RS"> CORSAN - RS </option>
+             	<option value = "INMETRO -RS"> INMETRO -RS </option>
+             
+             	</select>                 	
+            </div>
+            
+            <div class= " form-group centro-de-custo" data-polo ="RIO GRANDE DO SUL" style="display: none">
+             	<h1> Centro de custo - BRASÍLIA/GO </h1>
+             
+             <select name = "centroDEcusto6" id = "centroDEcusto6">
+             	<option disabled selected>Escolha uma opção</option>
+             	<option value = "CODEVASF"> CODEVASF </option>
+             	<option value = "EXERCITO CRO 11"> EXERCITO CRO 11 </option>
+             	<option value = "MINISTERIO DO DESENVOLVIMENTO REGIONAL"> MINISTERIO DO DESENVOLVIMENTO REGIONAL </option>
+             	<option value = "EXECUÇÃO CAR"> EXECUÇÃO CAR </option>
+             	<option value = "EXECUÇÃO SB"> EXECUÇÃO SB </option>
+             	<option value = "CMP"> CMP </option>
+             	<option value = "EXECUÇÃO CMI"> EXECUÇÃO CMI </option>
+             	<option value = "ADMINISTRAÇÃO CENTRAL"> ADMINISTRAÇÃO CENTRAL </option>
+             	<option value = "HFA"> HFA </option>
+             	<option value = "MULTIRÃO"> MULTIRÃO </option>
+             	<option value = "PGR"> PGR </option>
+             	<option value = "OBRAS SARAH"> OBRAS SARAH </option>
+             	<option value = "SEDES"> SEDES </option>
+             	<option value = "ITAMARATY - MÃO DE OBRA"> ITAMARATY - MÃO DE OBRA </option>
+             	<option value = "ITAMARATY - SERVIÇO EVENTUAIS"> ITAMARATY - SERVIÇO EVENTUAIS </option>
+             	<option value = "JFGO - JUSTIÇA FEDERAL GOIAIS (PESSOAL)"> JFGO - JUSTIÇA FEDERAL GOIAIS (PESSOAL) </option>
+             	<option value = "SES - LOTE 17"> SES - LOTE 17 </option>
+             	<option value = "SES - LOTE 10"> SES - LOTE 10 </option>
+             	<option value = "SES - LOTE 12"> SES - LOTE 12 </option>        
+             </select>                     	
+             	
+            </div>
           
+          
+          <div class= " form-group centro-de-custo" data-polo ="RIO GRANDE DO SUL" style="display: none">
+             	<h1> Centro de custo - NATAL GÊNNESIS </h1>
+             
+             <select name = "centroDEcusto6" id = "centroDEcusto6">
+             	<option disabled selected>Escolha uma opção</option>
+             	<option value = "CODEVASF"> CODEVASF </option>
+             	<option value = "EXERCITO CRO 11"> EXERCITO CRO 11 </option>
+             	<option value = "MINISTERIO DO DESENVOLVIMENTO REGIONAL"> MINISTERIO DO DESENVOLVIMENTO REGIONAL </option>
+             	<option value = "EXECUÇÃO CAR"> EXECUÇÃO CAR </option>
+             	<option value = "EXECUÇÃO SB"> EXECUÇÃO SB </option>
+             	<option value = "CMP"> CMP </option>
+             	<option value = "EXECUÇÃO CMI"> EXECUÇÃO CMI </option>
+             	<option value = "ADMINISTRAÇÃO CENTRAL"> ADMINISTRAÇÃO CENTRAL </option>
+             	<option value = "HFA"> HFA </option>
+             	<option value = "MULTIRÃO"> MULTIRÃO </option>
+             	<option value = "PGR"> PGR </option>
+             	<option value = "OBRAS SARAH"> OBRAS SARAH </option>
+             	<option value = "SEDES"> SEDES </option>
+             	<option value = "ITAMARATY - MÃO DE OBRA"> ITAMARATY - MÃO DE OBRA </option>
+             	<option value = "ITAMARATY - SERVIÇO EVENTUAIS"> ITAMARATY - SERVIÇO EVENTUAIS </option>
+             	<option value = "JFGO - JUSTIÇA FEDERAL GOIAIS (PESSOAL)"> JFGO - JUSTIÇA FEDERAL GOIAIS (PESSOAL) </option>
+             	<option value = "SES - LOTE 17"> SES - LOTE 17 </option>
+             	<option value = "SES - LOTE 10"> SES - LOTE 10 </option>
+             	<option value = "SES - LOTE 12"> SES - LOTE 12 </option>        
+             </select>                     	
+             	
+            </div>
+            
             </div>
             <h1> Setor solicitante: </h1>
             <div class="form-group">
-                <label for= "setor" >Escolha uma opção</label>
+                <label for= "setor" ></label>
+                
                 <select name="setor" id="setor">
+                <option disabled selected>Escolha uma opção</option>
                 <option value="RH"> RH </option>
         		<option value="Compras"> Compras </option>
         		<option value="Administrativo"> Administrativo </option>
         		<option value="Departamento Pessoal"> Departamento Pessoal </option>
-        		<option value="Licita��es"> Licitações </option>
+        		<option value="Licitações"> Licitações </option>
         		<option value="Contratos"> Contratos </option>
-        		<option value="Log�stica"> Logística </option>
+        		<option value="Logística"> Logística </option>
         		<option value="Almoxarifado"> Almoxarifado </option>
         		<option value="Engenharia"> Engenharia </option>
-        		<option value="SEGURAN�A DO TRABALHO"> SEGURANÇA DO TRBALHO </option>
-        		<option value="Assist�ncia diretoria"> Assistência diretoria </option>
+        		<option value="SEGURANÇA DO TRABALHO"> SEGURANÇA DO TRBALHO </option>
+        		<option value="Assistência diretoria"> Assistência diretoria </option>
         		<option value="Financeiro"> Financeiro </option>
         		<option value="Faturamento"> Faturamento </option>             
               </select>
@@ -150,7 +271,7 @@
                     <div class="radio">
                         <label>
                             <input type="radio" name="juro" id="jurosNao" value="option5">
-                            N�O
+                            NÃO
                         </label>
                     </div>
                     
@@ -162,7 +283,7 @@
                     <input type="text" id="valorJuros" name="valorJuros">
                 </div>
                     
-                  <button id="limparSelecao1"> Limpar sele��o selecionada </button>
+                  <button id="limparSelecao1"> Limpar seleção selecionada </button>
 
                     <h1> Valor Total a ser pago (R$) </h1>
 
@@ -171,15 +292,15 @@
                             placeholder="Digite aqui...">
                     </div>
 
-                    <h1> Dados banc�rios: </h1>
+                    <h1> Dados bancários: </h1>
                     <div class="form-group">
                         <ul>
                             <li> Banco </li>
-                            <li> Ag�ncia </li>
-                            <li> Tipo de conta (poupan�a ou corrente) </li>
+                            <li> Agência </li>
+                            <li> Tipo de conta (poupança ou corrente) </li>
                             <li> Conta </li>
                             <li> CPF/CNPJ </li>
-                            <li> NOME DO BENEFICI�RIO: </li>
+                            <li> NOME DO BENEFICIÁRIO: </li>
                             <label for="texto"> </label>
                             <textarea id="digite" name="digite" rows="10" cols= "50" placeholder="digite aqui...">
                             	
@@ -187,7 +308,7 @@
                         </ul>
                     </div>
                     
-                  <h1> Anexe a documenta��o </h1>
+                  <h1> Anexe a documentação </h1>
                     <div class = "form-group">
                     	<label for="anexos"> + adicionar novos arquivos </label>
                     	<input type="file" id="anexos" name="anexos" multiple>
@@ -199,7 +320,7 @@
                     	<input type="date" id="dataNascimento" name="dataNascimento">
                    </div>
                    
-                 <h1> Respos�vel pela solicita��o: </h1>  
+                 <h1> Resposavel pela solicitação: </h1>  
                  	<div> <label for = "resposavelSolicitacao"> Digite aqui: </label>
                  		<input type= "text" id="responsavelSolicitacao" name="responsavelSolicitacao">
                  	</div>
@@ -208,7 +329,7 @@
                  	<div> <label for = "emailParaContato"> Digite aqui: </label>
                  		<input type= "text" id="emailParaContato" name="emailParaContato">
                  	</div>
-                 <h1> E-mail c�pia: </h1>  
+                 <h1> E-mail copia: </h1>  
                  	<div> <label for = "emailCopia"> Digite aqui: </label>
                  		<input type= "text" id="emailCopia" name="emailCopia">
                  	</div>

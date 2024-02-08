@@ -15,3 +15,6 @@
 }
 
 
+select:focus option[value="Escolha uma opção"] {
+    display: none;
+}
